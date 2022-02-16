@@ -1,12 +1,12 @@
-const  readLine  =  require ( 'readline' ) .  criarInterface ( {
-    entrada : processo . stdin ,   
-    saída : processo . padrão
+const  readLine  =  require ( 'readLine' ).createInterface ( {
+    input : process.stdin ,   
+    output : process.stdout,
 } )
 
-const  minhaPrimeiraConstanteString  =  'Minha primeira consntante' ;
+const  minhaPrimeiraConstanteString  =  'Minha primeira constante';
 console.log ( minhaPrimeiraConstanteString ) ;
 let  leituraDeCampo 
-readLinha . question ( 'Informe sua idade:' ,  input  =>  {
-    leituraDeCampo  =  entrada ;
-    console.log ( `o usuário digitou: ${ leituraDeCampo } ` ) ;
-}  ) ;
+readLine.question ( 'Informe sua idade:' ,  input  =>  {
+    leituraDeCampo  =  input ;
+    console.log ( `o usuário digitou: ${ leituraDeCampo } ` );
+});
